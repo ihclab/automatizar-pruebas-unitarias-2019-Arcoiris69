@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "c:\\Users\\Luis Espindola\\Desktop\\IHC\\automatizar-pruebas-unitarias-2019-Arcoiris69\\automatizar-pruebas-unitarias-2019-Arcoiris69.csproj",
+  "TargetFramework": "netcoreapp2.2",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  }
+}

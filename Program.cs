@@ -10,19 +10,30 @@ namespace automatizar_pruebas_unitarias_2019_Arcoiris69
     {
         //Main
         static void Main(string[] args)
-        {            
-            StreamReader sr = 
+        {
+            StreamReader sr =
             new StreamReader(@"C:\Users\Luis Espindola\Desktop\IHC\automatizar-pruebas-unitarias-2019-Arcoiris69\CasosPrueba.txt");
-            string Rline ="";
-            int contador = 0;
-            while ((Rline = sr.ReadLine()) != null){
-                sr.ReadLine();
-                System.Console.WriteLine(Rline);
-                contador++;
+            string Rline = "";
+            int j = 0;
+            string[,] str = new string[20, 4];
+            string[] vect = null;
+            
+            while ((Rline = sr.ReadLine()) != null)
+            {
+
+                //System.Console.WriteLine(Rline);
+                vect = Rline.Split(":");
+                for (int i = 0; i <= vect.Length - 1; i++)
+                {
+                    str[j, i] = vect[i];
+                    Console.Write(str[j, i].ToString() + " ");
                 }
-            sr.Close();
-            System.Console.ReadLine();
+                j++;
+                System.Console.WriteLine(" ");
             }
+            sr.Close();
+            
         }
     }
+}
 
