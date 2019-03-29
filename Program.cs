@@ -57,7 +57,6 @@ namespace automatizar_pruebas_unitarias_2019_Arcoiris69
                 {
                 int[] vectint = null;
                 double sal = 0;
-                
                 data = str[i,1];
                 entrada = str[i,2];
                 salida = str[i,3];
@@ -67,31 +66,33 @@ namespace automatizar_pruebas_unitarias_2019_Arcoiris69
                 vectint = Array.ConvertAll(datos, int.Parse);
                 sal = Convert.ToDouble(salida);
                 double result;
-                Console.Write(count + ".-");
-                count++;
                 if(data == "mediaAritmetica"){
                     result = Medias.mediaAritmetica(vectint);
                     result = Math.Truncate(10000 * result)  / 10000;
                     
                     if(sal == result)
                     {
-                        Console.WriteLine("Éxito");
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine(count++ + ".-Éxito");
                     }
-                    else
-                        Console.WriteLine("Fallo");
+                    else{
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine(count++ + ".-Fallo");
+                    }
                 }
                 else if(data == "mediaGeometrica")
                 {
-                    
                    result = media.mediaGeometrica(vectint);
-                   result = Math.Truncate(10000 * result)  / 10000;
-                    
+                   result = Math.Truncate(10000 * result)  / 10000;   
                    if(sal == result)
                     {
-                        Console.WriteLine("Éxito");
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine(count++ + ".-Éxito");
                     }
-                    else
-                        Console.WriteLine("Fallo");
+                    else{
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine(count++ + ".-Fallo");
+                    }
                 }
                 else if(data == "mediaArmonica")
                 {
@@ -99,21 +100,23 @@ namespace automatizar_pruebas_unitarias_2019_Arcoiris69
                     result = Math.Truncate(10000 * result)  / 10000;
                     if(sal == result)
                     {
-                        Console.WriteLine("Éxito");
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine(count++ + ".-Éxito");
                     }
-                    else
-                        Console.WriteLine("Fallo");
+                    else{
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine(count++ + ".-Fallo");
+                    }
                 }
                 else{
-                    Console.WriteLine("Fallo");
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine(count++ + ".-Fallo");
                 }
                 } catch (Exception ex) {
+                    Console.ForegroundColor = ConsoleColor.White;
                     Console.WriteLine(count++ +".-Exepcion");
-                
-
                 }
             }
-            
             } catch (Exception ex) {
                     Console.WriteLine(ex.Message);
             }
