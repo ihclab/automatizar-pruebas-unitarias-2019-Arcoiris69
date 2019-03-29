@@ -63,9 +63,9 @@ namespace automatizar_pruebas_unitarias_2019_Arcoiris69
                 salida = str[i,3];
                 datos = entrada.Split(" ");
                 //Convierte los datos a su tipo de dato
-                
+
                 vectint = Array.ConvertAll(datos, int.Parse);
-                 if(double.TryParse(salida, out sal));
+                sal = Convert.ToDouble(salida);
                 
 
 
