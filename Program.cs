@@ -66,9 +66,6 @@ namespace automatizar_pruebas_unitarias_2019_Arcoiris69
 
                 vectint = Array.ConvertAll(datos, int.Parse);
                 sal = Convert.ToDouble(salida);
-                
-
-
                 double result;
                 Console.Write(count + ".-");
                 count++;
