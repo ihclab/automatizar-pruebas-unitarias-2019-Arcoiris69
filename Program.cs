@@ -22,7 +22,7 @@ namespace automatizar_pruebas_unitarias_2019_Arcoiris69
             string[] vect = null , datos = null;
             string entrada = "", salida = "", data = "";
             int count = 1;
-            
+            var watch = System.Diagnostics.Stopwatch.StartNew();
             try
             {
             while ((Rline = sr.ReadLine()) != null)
@@ -49,7 +49,6 @@ namespace automatizar_pruebas_unitarias_2019_Arcoiris69
             }
             //Ciclo para obtener el vector o los datos de las entradas
             sr.Close();
-            
 
             for(int i = 0; i <= 19; i++)
             {
@@ -120,6 +119,9 @@ namespace automatizar_pruebas_unitarias_2019_Arcoiris69
             } catch (Exception ex) {
                     Console.WriteLine(ex.Message);
             }
+            watch.Stop();
+            var elapsedMs = watch.ElapsedMilliseconds;
+            Console.WriteLine(elapsedMs + " Milisegundos");
         }
     }
 }
