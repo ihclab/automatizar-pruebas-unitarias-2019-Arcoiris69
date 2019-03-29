@@ -13,12 +13,14 @@ namespace automatizar_pruebas_unitarias_2019_Arcoiris69 {
          */
         public static double mediaAritmetica(params int[] vals) 
         { 
-            int sum = 0;
+            double sum = 0;
+            double result = 0;
             for (int i = 0; i < vals.Length; i++)
             {
                 sum += vals[i];
+                result = sum / vals.Length;
             }
-            return sum / vals.Length;
+            return Math.Truncate(10000 * result)  / 10000;
         }
 
         /**
@@ -26,7 +28,9 @@ namespace automatizar_pruebas_unitarias_2019_Arcoiris69 {
          */
         private static double raizEnesima(double x, int n)
         {
-            return Math.Pow(x, 1 / n);
+            double result = 0;
+            result = Math.Pow(x, 1 / n);
+            return Math.Truncate(10000 * result)  / 10000;
         }
 
         /**
@@ -34,7 +38,7 @@ namespace automatizar_pruebas_unitarias_2019_Arcoiris69 {
          */
         public double mediaGeometrica(params int[] vals) 
         {
-             int mult = 1;
+             double mult = 1;
             for (int i = 0; i < vals.Length; i++)
             {
                 mult *= vals[i];

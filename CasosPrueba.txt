@@ -11,10 +11,10 @@
 0011:mediaArmonica:2 4 8:3.4286
 0012:mediaArmonica:2 3 6:3.0000
 0013:mediaArmonica:13 10 11:3.0000
-0014:mediaArmonica:4 9 10:6.50602
-0015:mediaArmonica:5 10 17:9.36066
+0014:mediaArmonica:4 9 10:6.5060
+0015:mediaArmonica:5 10 17:9.3606
 0016:mediaAritmetica:5 6:0.0000
-0017:mediaGeometrica:0 0 0 0:Exception
+0017:mediaGeometric a:0 0 0 0:Exception
 0018:mediaAritmetica:NULL:0.0000
 0019:mediaGeometrica:NULL:0.0000
 0020:mediaNoExiste:2 3 6:3.0320
